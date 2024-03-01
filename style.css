@@ -1,8 +1,17 @@
 body, html {
+
+    width: 100%;
+    color: white;
+    overflow-y: scroll; 
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+        height: 100%;
     margin: 0;
     padding: 0;
-    height: 100%;
+
+
 }
+
 
   @keyframes scrollAnimation {
     0% {
@@ -14,37 +23,272 @@ body, html {
 }
 .Page1{
     
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("homepage.jpeg");
+    background-size: cover;
+    position: relative;
+    right: 0px;
+
+}
+.cont1{
+
+    display: flex;
+    flex-direction: column;
+position: absolute;
+    top: 14rem;
+    left: 8rem;
+    gap: 1rem;
+    
+    
+
+}
+.name{
+    position: relative;
+    top: 25px;
+    left: 25px;
+    color: aqua;
+    font-size: 30px;
+}
+.c1{
+    margin-left:4rem;
+    min-width: 200px;
+    font-size: 24px;
+    
+}
+.namee{
+    margin-left:5rem;
+
+    font-size: 40px;
+    color: aqua;
+}
+.c2 {
+    padding-left: 3rem;
+    font-size: 24px;
+    font-weight: bold;
+    min-width: 200px; /* Set a fixed minimum width */
+    padding-top: 0;
+    margin-top: 0;
+    min-height: 30px;
+    color: aqua;
+
+}
+
+.button-btn1{
+    width: 100px;
+    height: 30px;
+    color: white;
+    margin-left: 4rem;
+    background-color: blue;
+}
+
+/* About Me page*/
+
+
+
+
+.page2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    background-image: url("homepage.jpeg");
-    background-size: cover;
-    animation: scrollAnimation 4s ;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+.leftpage{
+    display: flex;
+    justify-content: center;
+align-items: center;
+flex: 1;
+}
+.leftpage>img{
+position: relative;
+
+width: 70%;
+height: 70%;
+
+object-fit: cover;
+
+}
+
+.rightpage{
+    margin-top: 4rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-size: 26px;
+    margin-left: 2rem;
+    gap: 2rem;
+
+}
+.aboutme-text{
+    font-size: 20px;
+    margin-left: 2rem;
+}
+
+
+.Servicess{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 100%;
+    background-color: #061d4e;
+    background-image: linear-gradient(blue ,gray,blue);
+    gap: 6rem;
+}
+.Servicess>div:nth-child(1){
+    font-size: 30px;
+    color: wheat;
+    display: flex;
+    justify-content: center ;
+    margin-top: 4rem;
+    max-height: 200px;
+  
+}
+
+.servicesboxes{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+
+}
+.servicesboxes>div{  
+    position: relative;  
+    width: 300px;
+    height: 300px;
+    border: 4px solid gray;
+    background-color: rgb(124, 107, 81);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 4px 10px 4px;
+    
+
+}
+@keyframes scalable {
+    0%{
+transform: scale(1)
+    }
+    100%{
+        transform:scale(1.5);
+    }
+}
+
+.servicesboxes>div:hover{
+animation: scalable 2s ;
+transform:scale(1.4);
+
+} 
+
+
+
+.servicesboxes>div>i{
+    font-size: 24px;
+    color: white;
+    margin-top: 1.5rem;
 
     
 }
-@keyframes page2 {
-    from { opacity: 0%;}
-    to { opacity: 100%;}
-  }
 
-.AboutMe{
-    width: 100%;
-    height: 100%;
+.aboutit{
+    margin-top: 1rem;
+    font-size: 17px;
+    display: flex;
+    margin-left:24px ;
+}
 
+.skills{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-        text-align: center;
-        background-image:url("2.jpeg") ;
-        background-size: cover;
-        color: white;
-        animation: page2 5s ; 
+    
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(blue ,gray,blue);
+    gap: 6rem;
 
 }
 
 
+.progres{
+    width: 500px;
+    height: 3rem;
+    background-color: aliceblue;
+    border-radius: 3rem;
+}
 
+.headerskills{
+    font-size: 30px;
+    color: wheat;
+    display: flex;
+    justify-content: center ;
+    margin-top: 4rem;
+    max-height: 200px;
+}
+.containerskills{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.leftpageskills{
+    flex: 1;
+}
+.rightpageskills{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.wrapper {
+    width: 500px;
+}
+
+.containerprogressbar{
+    display: flex;
+    flex-direction: row;
+
+}
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+.nameofSkillsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.NameofSkills{
+    position: relative;
+    top: 0.3rem;
+    right: 0.5rem;
+    font-size: 20px;
+}
+
+.rightpagecontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.progress-bar-fill {
+    display: block;
+    height: 22px;
+    background-color: #659cef;
+    border-radius: 3px;
+    
+    transition: width 500ms ease-in-out;
+}
