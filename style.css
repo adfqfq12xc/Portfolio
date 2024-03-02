@@ -91,6 +91,7 @@ position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image: linear-gradient(blue ,gray,blue);
     align-items: center;
     width: 100vw;
     height: 100vh;
@@ -241,6 +242,26 @@ transform:scale(1.4);
 .leftpageskills{
     flex: 1;
 }
+
+.leftpageitems{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
+
+}
+.fa-solid1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 1rem;
+}
+.leftpageitems>h1{
+    position: relative;
+    top: -23px;
+    left: 2px;
+}
 .rightpageskills{
     flex: 1;
     display: flex;
@@ -291,4 +312,33 @@ transform:scale(1.4);
     border-radius: 3px;
     
     transition: width 500ms ease-in-out;
+}
+.contact{
+    background-image: linear-gradient(blue ,gray,blue);
+    width: 100vw;
+    height: 50vh;   
+}
+.contactheader{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactcontainer{
+    display: flex;
+margin-top: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+input{
+    width: 50%;
+}
+.soacialmedia{
+    display: flex;
+position: relative;
+left: 2rem;
+    flex-direction: row;
+    gap: 2rem;
 }
